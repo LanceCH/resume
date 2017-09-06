@@ -1,17 +1,5 @@
 
 $(function(){
-	$(window).resize();
-	$("#block-nav").css("z-index", 1);
-
-	// 导航条固定顶部
-	// $("#block-nav").navFixed();
-
-	//平滑滚动导航
-	$('#fstPage-down a, nav a, #logo').bind('click',function(event){
-		var $anchor = $(this);
-		$('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top-52}, 600);
-		event.preventDefault();
-	});
 	//全屏翻页
 	var runPage = new FullPage({
 	
@@ -20,7 +8,7 @@ $(function(){
 		continuous : true,                             // create an infinite feel with no endpoints
 		effect : {                                     // slide effect
 				transform : {
-					translate : 'none',				   // 'X'|'Y'|'XY'|'none'
+					translate : 'Y',				   // 'X'|'Y'|'XY'|'none'
 					scale : [.1, 1],				   // [scalefrom, scaleto]
 					rotate : [0, 0]				   // [rotatefrom, rotateto]
 				},
@@ -35,6 +23,19 @@ $(function(){
 		//    alert(index);
 		//  };
 	});
+	$(window).resize();
+	$("#block-nav").css("z-index", 1);
+
+	// 导航条固定顶部
+	// $("#block-nav").navFixed();
+
+	//平滑滚动导航
+	// $('#fstPage-down a, nav a, #logo').bind('click',function(event){
+	// 	var $anchor = $(this);
+	// 	$('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top-52}, 600);
+	// 	event.preventDefault();
+	// });
+	
 });
 
 $(window).resize(function(){ 
