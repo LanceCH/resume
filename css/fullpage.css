@@ -71,5 +71,88 @@ body {
     width: 40px;
     height: 40px;
 }
+*{margin:0;padding:0;font-family:"Microsoft YaHei"}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+img{border:none;}
+li{list-style:none;}
+a{text-decoration:none; color:white !important;}
+.fl{float:left;}
+.fr{float:right;}
+h4{
+    font-size: 1.25em;
+    margin: 0 0 0.1em 0;
+    margin-top: 0;
+}
 
+.desc{
+    margin: 1em 0 0.25em 0;
+    color: #aee2d9;
+}
+.name{
+    margin: 0.25em 0 0 0;
+    text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
+    text-align: center;
+    font-size: 3.5em;
+}
+.descSpan{
+    width: 400px !important;
+}
+
+.fr p{
+    margin-top: 12%;
+    margin-left: 0%;
+    width: 260px;
+}
+.skills{
+    margin-top: 4vw;
+}
+.companyDetail{
+    text-align: center;
+}
+.h4{
+    color: #eef3f0 !important;
+}
+#block-skill .name{
+    text-shadow: 1px 2px #9C58B6, 2px 4px #bb8ccd;
+}
+#block-workEXP .name{
+    text-shadow: 1px 2px #26B1B6, 2px 4px #75ced1;
+}
+.titleRow:first-child{
+    margin-bottom: 2vw;
+}
+#block-prjEXP .name{
+    text-shadow: 1px 2px #129DE7, 2px 4px #7ac0e5;
+}
+.circle-img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #008a75;
+    padding: 18px
+}
+.row-project{
+    position: relative;
+    
+}
+.row-project>div{
+    float: left;
+}
+.row-project h2{
+    font-size: 2em;
+    margin: 0 0 0.2em 0;
+    margin-top: 0;
+}
+.appName{
+    font-size: 3.5vh;
+}
+#block-wantMore .telWay{ 
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}   
 
